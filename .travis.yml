@@ -25,8 +25,7 @@ before_install:
   - tar zxvf trivy_${VERSION}_Linux-${TRIVYARCH}.tar.gz
   - sudo apt-get install -y libssl-dev zlib1g-dev gcc g++ make
   - git clone https://github.com/edenhill/librdkafka
-  - sleep 10
-  - cd librdkafa
+  - cd librdkafka
   - ./configure --prefix=/usr
   - make
   - sudo make install
