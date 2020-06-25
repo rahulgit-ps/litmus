@@ -2,11 +2,12 @@
 dist: trusty
 install: true
 language: go
+arch: arm64
 go:
   - 1.11.2
 env:
   global:
-    - GOARCH=amd64
+    - GOARCH=arm64
     - TRIVYARCH="64bit"
     
 addons:
