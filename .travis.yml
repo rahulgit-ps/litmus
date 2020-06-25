@@ -29,6 +29,7 @@ before_install:
   - ./configure --prefix=/usr
   - make
   - sudo make install
+  - python setup.py build
 
 script:
   - make deps
